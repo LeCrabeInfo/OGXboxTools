@@ -16,7 +16,8 @@ echo Press any key to start...
 pause >nul
 echo.
 
-powershell.exe -file XBMCEmustationSynopsisFilesGenerator.ps1 %*
+set "scriptPath=%~dp0XBMCEmustationSynopsisFilesGenerator.ps1"
+powershell.exe -File "%scriptPath%" %*
 
 echo.
 echo Process completed! Press any key to exit...
